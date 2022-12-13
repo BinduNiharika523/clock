@@ -1,0 +1,73 @@
+<html>
+    <head>
+        <style>
+body{background-color:black;}
+.clock{height:600px;width:600px;border:16px solid gray;border-radius:400px;margin-left:400px;opacity:1;
+background-color:black;background-color:black;margin-top:-700px;}
+.y{height:700px;width:700px;border:16px solid white;border-radius:400px;margin-left:330px;border-top:36px solid black;border-bottom:36px solid white;
+ border-left:36px solid white;border-right:36px solid white;animation:spin 10s linear infinite;margin-top:20px;}
+@keyframes spin{
+0%{transform:rotate(0deg);}
+100%{transform:rotate(360deg);}}
+
+.a{margin-left:280px;font-size:30px;color:white;}
+.b{margin-left:295px;font-size:30px; margin-top:495px;color:white;}
+.c{margin-left:550px;font-size:30px; margin-top:-325px;color:white;}
+.d{margin-left:30px;font-size:30px; margin-top:-45px;color:white;}
+.e{margin-left:430px;font-size:30px; margin-top:-280px;color:white;}
+.f{margin-left:510px;font-size:30px; margin-top:60px;color:white;}
+.g{margin-left:520px;font-size:30px; margin-top:220px;color:white;}
+.h{margin-left:430px;font-size:30px; margin-top:60px;color:white;}
+.i{margin-left:155px;font-size:30px; margin-top:-50px;color:white;}
+.j{margin-left:60px;font-size:30px; margin-top:-150px;color:white;}
+.k{margin-left:55px;font-size:30px; margin-top:-300px;color:white;}
+.l{margin-left:140px;font-size:30px; margin-top:-160px;color:white;}
+
+
+.z{margin-left:465px;margin-top:-585px;}
+.sec{height:250px;width:5px;left:245px;top:20px;background:yellow;z-index:3;animation:sec-anim 60s linear infinite;
+border-radius:30px;}
+.min{height:250px;width:10px;left:240px;top:-230px;background:red;z-index:2;animation:min-anim 3600s linear infinite;opacity:0.8;
+border-radius:30px;}
+.hour{height:180px;width:14px;left:240px;background:blue;top:-410px;z-index:1;animation:hour-anim 43200s linear infinite;
+border-radius:30px;}
+.sec,.min,.hour{lineheight:4px;position:relative;transform-origin:bottom;}
+@keyframes sec-anim{
+from{transform:rotatez(0deg);}
+to{transform:rotatez(360deg);}}
+@keyframes min-anim{
+from{transform:rotatez(0deg);}
+to{transform:rotatez(360deg);}}
+@keyframes hour-anim{
+from{transform:rotatez(0deg);}
+to{transform:rotatez(360deg);}}
+
+        </style>
+    </head>
+    <body>
+<div class="y"></div>
+<div class="clock">
+<h1 class="a">12</h1>
+<h1 class="b">6</h1>
+<h1 class="c">3</h1>
+<h1 class="d">9</h1>
+<h1 class="e">1</h1>
+<h1 class="f">2</h1>
+<h1 class="g">4</h1>
+<h1 class="h">5</h1>
+<h1 class="i">7</h1>
+<h1 class="j">8</h1>
+<h1 class="k">10</h1>
+<h1 class="l">11</h1>
+
+
+
+</div>
+      <div class="z">
+
+<div class="sec"> </div>
+<div class="min"></div>
+<div class="hour">
+     </div>  </div>
+    </body>
+</html>
